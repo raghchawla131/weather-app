@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Weather application" />
+    <meta name="keywords" content="weather, api" />
+    <meta name="author" content="Raghav" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body>
+    <section id="page">
+      <div id="search">
+        <input id="search-bar" type="text" placeholder="City" />
+        <ion-icon name="search-outline" id="search-icon"></ion-icon>
+      </div>
+      <img id="weather-img" src="images/cloudy.png" alt="">
+      <h1 id="temp">22&degC</h1>
+      <h2 id="city">Delhi</h2>
+      <div id="details">
+        <div class="col">
+          <img src="images/humidity.png">
+            <div>
+              <p id="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+        </div>
+        <div class="col">
+          <img src="images/wind.png">
+            <div>
+              <p id="wind">23km/h</p>
+              <p>wind speed</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
